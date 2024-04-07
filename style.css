@@ -1,0 +1,48 @@
+body {
+    background : url("/Home.jpg");
+    background-size : cover;
+    font-family : "Roboto", sans-serif;
+}
+
+.navbar {
+    display : flex;
+    justify-content : space-between;
+    padding-left : 10px;
+    padding-right : 10px;
+    color : white;
+    font-size : 1rem;
+    margin-top : 10px;
+}
+
+#nav-signin {
+    color : white;
+    text-decoration : none;
+    font-size : 0.75rem;
+}
+
+.hero {
+    margin-top : 100px auto;
+    text-align : center;
+    color : white;
+}
+
+.hero > h3 {
+    font-weight : 400;
+}
+
+.hero button {
+    background-color : #ff8000;
+    border-width : 0;
+    color : white;
+    padding : .25rem .5rem;
+    font-weight : 500;
+    border-radius : 0.15rem;
+    font-size : 12px;
+}
+
+.home {
+    height : 350px;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+}

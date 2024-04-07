@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Blog</title>
+    <style>
+        body {
+            background-color :aliceblue;
+        }
+        .create {
+            width : 400px;
+            height : 300px;
+            border-radius : 1rem;
+            background-color : white;
+            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+            margin : 100px auto;
+            padding : 15px;
+            display : flex;
+            flex-direction: column;
+            justify-content : space-evenly;
+            align-items: center;
+        }
+        h3 {
+            color :#0b57d0;
+        }
+        input {
+            width : 300px;
+            height : 1.5rem;
+            border : 1px solid black;
+            border-radius : 0.25rem;
+        }
+        textarea {
+            border : 1px solid black;
+            border-radius : 0.5rem;
+        }
+        button {
+            margin-left : 120px;
+            color : white;
+            background-color : #0b57d0;
+            border-radius : 0.75rem;
+            border-width : 0;
+            font-size : 14px;
+            margin-bottom : 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="create">
+        <h3>Edit Your Blog</h3>
+        <form method = "post" action = "/blogs/<%=blog.id%>?_method=PATCH">
+            <input type = "text" name = "name" value = "<%=blog.name%>"><br><br>
+            <input type = "password" name = "password" placeholder = "Enter your password"><br><br>
+            <textarea name="content" cols="39" rows="9"><%=blog.content%></textarea><br><br>
+            <button>Edit Blog</button>
+        </form>
+    </div>
+</body>
+</html>
